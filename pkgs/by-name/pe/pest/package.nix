@@ -6,17 +6,17 @@
 
 php.buildComposerProject2 (finalAttrs: {
   pname = "pest";
-  version = "3.7.4";
+  version = "5.3.5";
 
   src = fetchFromGitHub {
     owner = "pestphp";
     repo = "pest";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-ddsdVx/Vsg7GG11fGASouBU3HAJLSjs1AQGHx52TWzA=";
+    hash = "sha256-VpDALGva4yE8nndntVtCXqsv3mmDhIDm/XJXA6g7crM";
   };
 
   composerLock = ./composer.lock;
-  vendorHash = "sha256-Lv+wbOJVO7gGs4bOcECKyaw7+k3Z4f8gbNEv9uk4he8=";
+  vendorHash = "sha256-PsE6yRZgLPFJndNj48hvJ9oEfOcfppFLAIEEuTbJpJc";
 
   meta = {
     changelog = "https://github.com/pestphp/pest/releases/tag/v${finalAttrs.version}";
